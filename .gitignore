@@ -1,0 +1,43 @@
+# ==============================================================================
+# Git Ignore Rules for LangChain Assignments
+# ==============================================================================
+
+# 1. Environment variables & Secrets (NEVER upload API keys!)
+.env
+*.env
+.env.local
+.env.*.local
+
+# 2. Virtual Environments
+venv/
+.venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# 3. Python cache & compiled bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyc
+
+# 4. Local Vector Database storage folders (Binary DB files)
+chroma_reviews_db/
+chroma_facts_db/
+**/chroma_reviews_db/
+**/chroma_facts_db/
+.chroma/
+
+# 5. OS & IDE configurations
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# 6. Streamlit & Temporary run logs
+.streamlit/secrets.toml
+*.log
+scratch/
